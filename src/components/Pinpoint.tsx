@@ -20,7 +20,11 @@ function Pinpoint({ pinpoint }: PinpointProps) {
           <div className="text-sm">{pinpoint.address}</div>
         </div>
       </div>
+      {/* Right section with a button to view on the map */}
+
       <button className="bg-white rounded-md text-blue-400 p-1.5 max-w-fit whitespace-nowrap">
+        {/* External link to view the pinpoint on the map */}
+
         <a
           target="_blank"
           href={`https://livemap.getwemap.com/#/pinpoints/${pinpoint.id}`}

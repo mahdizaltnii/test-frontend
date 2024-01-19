@@ -3,6 +3,7 @@ import { useRouter } from "next/navigation";
 import { useDebounce } from "@/hooks/useDebounce";
 import { ChangeEvent, useState, useEffect } from "react";
 
+// I Define the props for the SearchBar component
 type SearchBarProps = {
   initialQuery?: string | string[];
   initialLimit?: number;

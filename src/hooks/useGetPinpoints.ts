@@ -12,6 +12,8 @@ function useGetPinpoints({ query, limit, offset }: getPinpointsProps) {
   const [isError, setIsError] = React.useState(false);
   const [error, setError] = React.useState({} as any);
   const [isLoading, setIsLoading] = React.useState(true);
+  
+  // Effect to fetch data when query, limit, or offset changes
   useEffect(() => {
     setIsLoading(true);
     async function fetchData() {
